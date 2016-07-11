@@ -17,6 +17,8 @@
         <bobcat.version>0.9.2</bobcat.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <fork.count>2</fork.count>
     </properties>
 
     <build>
@@ -36,6 +38,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.16</version>
                 <configuration>
+                    <forkCount>${fork.count}</forkCount>
                     <systemPropertyVariables>
                         <webDriver.type>${webDriver.type}</webDriver.type>
                         <configuration.paths>${configuration.paths}</configuration.paths>
@@ -62,37 +65,9 @@
             <artifactId>bb-reports</artifactId>
             <version>${bobcat.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.cognifide.qa</groupId>
-            <artifactId>concurrent-cukes</artifactId>
-            <version>0.1.0</version>
-        </dependency>
     </dependencies>
 
     <profiles>
-        <profile>
-            <id>concurrent</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-assembly-plugin</artifactId>
-                        <version>2.4</version>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <mainClass>com.cognifide.bdd.cucumber.concurrent.ConcurrentCucumber</mainClass>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <finalName>${artifactId}</finalName>
-                            <appendAssemblyId>false</appendAssemblyId>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
         <profile>
             <id>integration</id>
             <properties>
