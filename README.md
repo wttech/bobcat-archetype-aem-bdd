@@ -1,6 +1,6 @@
 ![Cognifide logo](http://cognifide.github.io/images/cognifide-logo.png)
 
-# Bobcat AEM Archetype
+# Bobcat AEM BDD Archetype 
 
 ## Summary 
 This project is Maven archetype for Bobcat using BDD tests with support for AEM. It contains tests examples and page object ready to use in AEM .
