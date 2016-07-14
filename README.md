@@ -16,7 +16,12 @@ mvn archetype:generate \
         -DarchetypeArtifactId=bobcat-archetype-aem-bdd \
         -DarchetypeVersion=0.9.1-SNAPSHOT \
 ```
-
+```
+Define value for property 'groupId': : com.cognifde.qa.bb
+Define value for property 'artifactId': : hello-world
+Define value for property 'version':  1.0-SNAPSHOT: : 1.0.0
+Define value for property 'package':  com.cognifde.qa.bb: : com.hello.world
+```
 ## Project structure
 ```
 └───hello-world
