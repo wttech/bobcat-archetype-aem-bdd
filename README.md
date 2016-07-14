@@ -16,6 +16,7 @@ mvn archetype:generate \
         -DarchetypeArtifactId=bobcat-archetype-aem-bdd \
         -DarchetypeVersion=0.9.1-SNAPSHOT \
 ```
+Example properties for archetype
 ```
 Define value for property 'groupId': : com.cognifde.qa.bb
 Define value for property 'artifactId': : hello-world
