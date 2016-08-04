@@ -3,16 +3,17 @@
 #set( $symbol_escape = '\' )
 package ${package}.steps;
 
+import com.cognifide.qa.bb.aem.dialog.configurer.ConfigurationEntry;
 import com.cognifide.qa.bb.aem.ui.menu.AemToolbar;
 import com.cognifide.qa.bb.constants.Timeouts;
+import com.cognifide.qa.bb.scenario.ScenarioContext;
 import ${package}.pageobjects.feedback.FeedbackPage;
 import ${package}.pageobjects.feedback.StartFormComponent;
 import com.cognifide.qa.bb.aem.ui.AemDialog;
 import com.cognifide.qa.bb.aem.dialog.configurer.ComponentConfigurerFactory;
-import com.cognifide.qa.bb.aem.dialog.configurer.ConfigurationEntry;
-import com.cognifide.qa.bb.aem.dialog.configurer.ScenarioContext;
 import com.cognifide.qa.bb.provider.selenium.BobcatWait;
 import com.google.inject.Inject;
+
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.runtime.java.guice.ScenarioScoped;
@@ -71,16 +72,16 @@ public class AuthorPageSteps {
     @And("^I set the rest of the properties using my component configuration data$")
     public void I_set_the_rest_of_the_properties_using_my_component_configuration_data() {
         componentConfigurerFactory.create(aemDialog).configureDialog(
-                scenarioContext.getList("config", ConfigurationEntry.class));
+            scenarioContext.getList("config"));
     }
 
     @Then("^component is configured according to configuration data$")
     public void component_is_configured_according_to_configuration_data() {
         List<ConfigurationEntry> componentConfiguration = componentConfigurerFactory.create(aemDialog)
-                .getDialogConfiguration(scenarioContext.getList("config", ConfigurationEntry.class));
+            .getDialogConfiguration(scenarioContext.getList("config"));
         for (int i = 0; i < componentConfiguration.size(); i++) {
             ConfigurationEntry entry = componentConfiguration.get(i);
-            assertEquals("Incorrect configuration entry: " + entry, entry, scenarioContext.getList("config", ConfigurationEntry.class).get(i));
+            assertEquals("Incorrect configuration entry: " + entry, entry, scenarioContext.getList("config").get(i));
         }
     }
 }

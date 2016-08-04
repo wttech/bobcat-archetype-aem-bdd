@@ -4,10 +4,52 @@
 
     <groupId>com.cognifide.qa.bb</groupId>
     <artifactId>bobcat-archetype-aem-bdd</artifactId>
-    <version>0.9.1-SNAPSHOT</version>
+    <version>0.9.2-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>bobcat-archetype-aem-bdd</name>
+    <description>Basic Bobcat archetype</description>
+    <url>https://github.com/Cognifide/bobcat-archetype</url>
+    <inceptionYear>2016</inceptionYear>
+
+    <organization>
+        <name>Cognifide Ltd.</name>
+        <url>http://www.cognifide.com</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Karol Kujawiak</name>
+            <email>karol.kujawiak@cognifide.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem.git</connection>
+        <developerConnection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/cognifide/bobcat-archetype-aem-bdd</url>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>Nexus Release Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <build>
         <extensions>
@@ -44,40 +86,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <scm>
-        <connection>scm:git@github.com:cogbobcat/bobcat-archetype-aem-bdd.git</connection>
-        <developerConnection>scm:git@github.com:cogbobcat/bobcat-archetype-aem-bdd.git</developerConnection>
-        <tag>HEAD</tag>
-        <url>git@github.com:cogbobcat/bobcat-archetype-aem-bdd.git</url>
-    </scm>
-
-    <developers>
-        <developer>
-            <name>Karol Kujawiak</name>
-            <email>karol.kujawiak@cognifide.com</email>
-        </developer>
-    </developers>
-
-    <licenses>
-        <license>
-            <name>The Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-
-    <distributionManagement>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 
     <profiles>
         <profile>
