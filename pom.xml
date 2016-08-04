@@ -8,7 +8,7 @@
     <packaging>maven-archetype</packaging>
 
     <name>bobcat-archetype-aem-bdd</name>
-    <description>AEM BDD Bobcat archetype</description>
+    <description>Basic Bobcat archetype</description>
     <url>https://github.com/Cognifide/bobcat-archetype</url>
     <inceptionYear>2016</inceptionYear>
 
@@ -32,8 +32,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem-bdd.git</connection>
-        <developerConnection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem-bdd.git</developerConnection>
+        <connection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem.git</connection>
+        <developerConnection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem.git</developerConnection>
         <tag>HEAD</tag>
         <url>https://github.com/cognifide/bobcat-archetype-aem-bdd</url>
     </scm>
