@@ -14,7 +14,7 @@ This project is Maven archetype for Bobcat using BDD tests with support for AEM.
 mvn archetype:generate \
         -DarchetypeGroupId=com.cognifide.qa.bb \
         -DarchetypeArtifactId=bobcat-archetype-aem-bdd \
-        -DarchetypeVersion=0.9.1-SNAPSHOT \
+        -DarchetypeVersion=1.0.0 \
 ```
 Example properties for archetype
 ```
