@@ -4,7 +4,7 @@
 
     <groupId>com.cognifide.qa.bb</groupId>
     <artifactId>bobcat-archetype-aem-bdd</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>maven-archetype</packaging>
 
     <name>bobcat-archetype-aem-bdd</name>
@@ -34,7 +34,7 @@
     <scm>
         <connection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem-bdd.git</connection>
         <developerConnection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem-bdd.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>1.0.1</tag>
         <url>https://github.com/cognifide/bobcat-archetype-aem-bdd</url>
     </scm>
 
