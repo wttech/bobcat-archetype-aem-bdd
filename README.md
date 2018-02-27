@@ -1,5 +1,7 @@
 ![Cognifide logo](http://cognifide.github.io/images/cognifide-logo.png)
 
+# This archetype is deprecated please use https://github.com/Cognifide/bobcat-gradle-template
+
 # Bobcat AEM BDD Archetype 
 
 ## Summary 
