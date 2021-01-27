@@ -1,4 +1,4 @@
-![Cognifide logo](http://cognifide.github.io/images/cognifide-logo.png)
+![WTT logo](docs/wtt-logo.png)
 
 # This archetype is deprecated please use https://github.com/Cognifide/bobcat-gradle-template
 

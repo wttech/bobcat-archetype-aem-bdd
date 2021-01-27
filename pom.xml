@@ -9,11 +9,11 @@
 
     <name>bobcat-archetype-aem-bdd</name>
     <description>AEM BDD Bobcat archetype</description>
-    <url>https://github.com/Cognifide/bobcat-archetype-aem-bdd</url>
+    <url>https://github.com/wttech/bobcat-archetype-aem-bdd</url>
     <inceptionYear>2016</inceptionYear>
 
     <organization>
-        <name>Cognifide Ltd.</name>
+        <name>Wunderman Thompson Technology</name>
         <url>http://www.cognifide.com</url>
     </organization>
 
@@ -32,10 +32,10 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem-bdd.git</connection>
-        <developerConnection>scm:git:git@github.com:Cognifide/bobcat-archetype-aem-bdd.git</developerConnection>
+        <connection>scm:git:git@github.com:wttech/bobcat-archetype-aem-bdd.git</connection>
+        <developerConnection>scm:git:git@github.com:wttech/bobcat-archetype-aem-bdd.git</developerConnection>
         <tag>HEAD</tag>
-        <url>https://github.com/cognifide/bobcat-archetype-aem-bdd</url>
+        <url>https://github.com/wttech/bobcat-archetype-aem-bdd</url>
     </scm>
 
     <distributionManagement>
